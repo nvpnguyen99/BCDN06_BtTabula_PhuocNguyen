@@ -1,0 +1,46 @@
+.members{
+    padding: 30px 0;
+    background-image: url(../img/Tabula_img13.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    background-color: #dcd1f3;
+    .members__content{
+        .card{
+            margin-top: 26px; 
+            border-radius: 10px;
+            overflow: hidden;  
+            transition: all .75s;
+            &:hover{
+                box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);;
+            }
+
+            .card__img{
+                overflow: hidden;
+                img{
+                    transition: all .75s;
+    
+                    &:hover{
+                        transform: scale(105%);
+                    }
+                }
+            }
+            
+            .card-body{
+                padding: 20px 32px 30px 32px;
+                h6{
+                    @include styleText(12px, 600, $color-dark-pink);
+                }
+
+                h5{
+                    font-weight: 700;
+                }
+
+                p{
+                    @include styleText(14px, 500, #000000);
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.container-xl {
+  max-width: 1260px;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+}
+header .navbar {
+  padding: 0;
+}
+header .navbar .navbar-collapse {
+  justify-content: flex-end;
+}
+header .navbar .navbar-collapse a:hover {
+  color: #b61984;
+}
+header .navbar .navbar-collapse li {
+  margin-right: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+header .navbar .navbar-collapse .navbar-nav a {
+  position: relative;
+}
+header .navbar .navbar-collapse .navbar-nav a::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #b61984;
+  left: 42%;
+  bottom: -15px;
+  transform: scale(0);
+  transition: 300ms ease all;
+}
+header .navbar .navbar-collapse .navbar-nav a:hover::after {
+  transform: scale(100%);
+}
+header .navbar .navbar-collapse .navbar-nav .active a::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #b61984;
+  left: 42%;
+  bottom: -15px;
+  transform: scale(100%);
+  transition: 300ms ease all;
+}
+header .navbar .navbar-collapse button {
+  background: none;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  margin: 0 20px;
+  transition: all 0.3s;
+  box-shadow: 0 0 0 3em #b61984 inset;
+}
+header .navbar .navbar-collapse button:hover {
+  color: #b61984;
+  box-shadow: 0 0 0 1px #b61984 inset;
+}
+header .navbar .navbar-collapse .header__iconContact a {
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+.aboutUs__carousel {
+  background-image: url(../img/Tabula_img03.png), url(../img/Tabula_img04.png);
+  background-position: left top, right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+}
+.aboutUs__carousel .carousel__left {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.aboutUs__carousel .carousel__left h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b61984;
+}
+.aboutUs__carousel .carousel__left h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.members {
+  padding: 30px 0;
+  background-image: url(../img/Tabula_img13.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  background-color: #dcd1f3;
+}
+.members .members__content .card {
+  margin-top: 26px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.75s;
+}
+.members .members__content .card:hover {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+.members .members__content .card .card__img {
+  overflow: hidden;
+}
+.members .members__content .card .card__img img {
+  transition: all 0.75s;
+}
+.members .members__content .card .card__img img:hover {
+  transform: scale(105%);
+}
+.members .members__content .card .card-body {
+  padding: 20px 32px 30px 32px;
+}
+.members .members__content .card .card-body h6 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #b61984;
+}
+.members .members__content .card .card-body h5 {
+  font-weight: 700;
+}
+.members .members__content .card .card-body p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+@mixin styleText($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
+@mixin styleButton($bg, $border, $radius, $pd-y, $pd-x){
+    background: $bg;
+    border: $border;
+    border-radius: $radius;
+    padding: $pd-y $pd-x;
+}
+
+@mixin styleButtonHover($bg-hover, $boder-hover, $color-hover) {
+    background: $bg-hover;
+    border: $boder-hover;
+    color: $color-hover;
+}
+

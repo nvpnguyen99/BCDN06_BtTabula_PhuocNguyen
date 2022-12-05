@@ -1,0 +1,77 @@
+header{
+    position: absolute;
+    width: 100%;
+    .navbar{
+        padding: 0;
+
+       .navbar-collapse{
+        justify-content: flex-end;
+
+        a{
+            &:hover{
+                color: $color-dark-pink;
+            }
+        }
+
+        li{
+            margin-right: 30px;
+            @include styleText(14px, 600, #000000);
+        }
+
+        .navbar-nav{
+            a{
+                position: relative;
+            }
+            a::after{
+                content: '';
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                border-radius: 50%;
+                background-color: $color-dark-pink;
+                left: 42%;
+                bottom: -15px;
+                transform: scale(0);
+                transition: 300ms ease all;
+            }
+             a:hover::after{
+                transform: scale(100%);
+            }
+
+            .active a::after{
+                content: '';
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                border-radius: 50%;
+                background-color: $color-dark-pink;
+                left: 42%;
+                bottom: -15px;
+                transform: scale(100%);
+                transition: 300ms ease all;
+            }
+        }
+
+        button{
+            @include styleButton(none,none, 25px, 12px, 20px);
+            @include styleText(14px, 500, white);
+            margin: 0 20px;
+            transition: all .3s;
+            box-shadow: 0 0 0 3em #b61984 inset;
+
+            &:hover{
+                color: $color-dark-pink;
+                box-shadow: 0 0 0 1px #b61984 inset;
+            }
+        }
+
+        .header__iconContact{
+            a{
+                margin: 0 5px;
+                font-size: 16px;
+            }
+        }
+
+       }
+    }
+}
