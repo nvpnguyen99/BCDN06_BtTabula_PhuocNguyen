@@ -1,0 +1,74 @@
+.findCourse{
+    padding: 70px 0;
+    background-image: url(../img/Tabula_img15.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+
+    .findCourse__left{
+        text-align: right;
+        img{
+            width: 75%;
+        }
+    }
+
+    .findCourse__right{
+        padding-left: 80px;
+
+        .courseForm{
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+            padding: 10px 25px 30px 25px;
+            background-color: white;
+            h2{
+                @include styleText(38px, 700, #000000);
+                margin-bottom: 50px;
+            }
+
+            .form-group{
+                width: 100%;
+                border: 1px solid #e5e5e5;
+                padding: 10px 0 10px 40px;
+                border-radius: 50px;
+                position: relative;
+
+                .formIcon{
+                    @include styleText(14px,500, $color-dark-pink);
+                    position: absolute;
+                    left: 14px;
+                    top: 12px;
+                }
+            }
+            input, select, textarea{
+                @include styleText(12px, 400, #757576);
+                outline: none;
+                border: none;
+                width: 90%;
+                
+            }
+
+            .textareaGroup{
+                border-radius: 20px;
+                padding-bottom: 0;
+                textarea{
+                    width: 99%;
+                   
+                }
+            }
+            
+            .sendButton{
+                @include styleButton(none,none, 25px, 12px, 60px);
+                @include styleText(14px, 500, white);
+                margin: 30px 0;
+                transition: all .3s;
+                box-shadow: 0 0 0 3em #b61984 inset;
+    
+                &:hover{
+                    color: $color-dark-pink;
+                    box-shadow: 0 0 0 1px #b61984 inset;
+                }
+            }
+        }
+    }
+}

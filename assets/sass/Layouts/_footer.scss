@@ -1,0 +1,79 @@
+footer{
+    padding: 80px 0 160px 0;
+    background-image: url(../img/Tabula_img16.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    color: white;
+
+    h2{
+        @include styleText(24px, 700, white);
+        margin-bottom: 25px;
+    }
+
+    .footer__contactIcon{
+        margin-top: 25px;
+        a{
+            color: white;
+            margin-right: 15px;
+            &:hover{
+                color: #000000;
+            }
+        }
+       
+    }
+
+    .footer__links{
+        a{
+            @include styleText(14px, 400, white);
+            
+            padding-bottom: 5px;
+            border-bottom: 1px solid #990472;
+           
+    
+            &:hover{
+                color: #e4e5e4;
+                text-decoration: none;
+            }
+        }
+    }
+    li{
+        margin-bottom: 15px;
+    }
+
+    .footer__letter{
+        .subcribeButton{
+            @include styleButton(none,none, 25px, 12px, 60px);
+                @include styleText(14px, 500, black);
+                margin-top: 10px;
+                width: 100%;
+                transition: all .3s;
+                box-shadow: 0 0 0 3em white inset;
+    
+                &:hover{
+                    color: $color-dark-pink;
+                    box-shadow: 0 0 0 1px white inset;
+                }
+        }
+        .letterForm{
+                width: 100%;
+                border: 1px solid #b3298b;
+                padding: 10px;
+                border-radius: 50px;
+                &:focus-within{
+                    border: 1px solid white;  
+                }
+                input{
+                    @include styleText(12px, 400, white);
+                    outline: none;
+                    border: none;
+                    background-color: #a9027e;
+                    width: 100%;
+                    &::placeholder{
+                        color: white;
+                    }
+                }
+        }
+        
+    }
+}

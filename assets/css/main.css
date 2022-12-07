@@ -13,6 +13,10 @@ a {
   color: #000000;
 }
 
+ul {
+  list-style: none;
+}
+
 .container-xl {
   max-width: 1260px;
 }
@@ -113,7 +117,7 @@ header .navbar .navbar-collapse .header__iconContact a {
 }
 
 .members {
-  padding: 30px 0;
+  padding: 25px 0;
   background-image: url(../img/Tabula_img13.png);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -124,7 +128,8 @@ header .navbar .navbar-collapse .header__iconContact a {
   margin-top: 26px;
   border-radius: 10px;
   overflow: hidden;
-  transition: all 0.75s;
+  border: none;
+  transition: all 0.5s;
 }
 .members .members__content .card:hover {
   box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
@@ -153,4 +158,157 @@ header .navbar .navbar-collapse .header__iconContact a {
   font-size: 14px;
   font-weight: 500;
   color: #000000;
+}
+
+.findCourse {
+  padding: 70px 0;
+  background-image: url(../img/Tabula_img15.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+}
+.findCourse .findCourse__left {
+  text-align: right;
+}
+.findCourse .findCourse__left img {
+  width: 75%;
+}
+.findCourse .findCourse__right {
+  padding-left: 80px;
+}
+.findCourse .findCourse__right .courseForm {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  padding: 10px 25px 30px 25px;
+  background-color: white;
+}
+.findCourse .findCourse__right .courseForm h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 50px;
+}
+.findCourse .findCourse__right .courseForm .form-group {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  padding: 10px 0 10px 40px;
+  border-radius: 50px;
+  position: relative;
+}
+.findCourse .findCourse__right .courseForm .form-group .formIcon {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b61984;
+  position: absolute;
+  left: 14px;
+  top: 12px;
+}
+.findCourse .findCourse__right .courseForm input, .findCourse .findCourse__right .courseForm select, .findCourse .findCourse__right .courseForm textarea {
+  font-size: 12px;
+  font-weight: 400;
+  color: #757576;
+  outline: none;
+  border: none;
+  width: 90%;
+}
+.findCourse .findCourse__right .courseForm .textareaGroup {
+  border-radius: 20px;
+  padding-bottom: 0;
+}
+.findCourse .findCourse__right .courseForm .textareaGroup textarea {
+  width: 99%;
+}
+.findCourse .findCourse__right .courseForm .sendButton {
+  background: none;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 60px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  margin: 30px 0;
+  transition: all 0.3s;
+  box-shadow: 0 0 0 3em #b61984 inset;
+}
+.findCourse .findCourse__right .courseForm .sendButton:hover {
+  color: #b61984;
+  box-shadow: 0 0 0 1px #b61984 inset;
+}
+
+footer {
+  padding: 80px 0 160px 0;
+  background-image: url(../img/Tabula_img16.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  color: white;
+}
+footer h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 25px;
+}
+footer .footer__contactIcon {
+  margin-top: 25px;
+}
+footer .footer__contactIcon a {
+  color: white;
+  margin-right: 15px;
+}
+footer .footer__contactIcon a:hover {
+  color: #000000;
+}
+footer .footer__links a {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #990472;
+}
+footer .footer__links a:hover {
+  color: #e4e5e4;
+  text-decoration: none;
+}
+footer li {
+  margin-bottom: 15px;
+}
+footer .footer__letter .subcribeButton {
+  background: none;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 60px;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  margin-top: 10px;
+  width: 100%;
+  transition: all 0.3s;
+  box-shadow: 0 0 0 3em white inset;
+}
+footer .footer__letter .subcribeButton:hover {
+  color: #b61984;
+  box-shadow: 0 0 0 1px white inset;
+}
+footer .footer__letter .letterForm {
+  width: 100%;
+  border: 1px solid #b3298b;
+  padding: 10px;
+  border-radius: 50px;
+}
+footer .footer__letter .letterForm:focus-within {
+  border: 1px solid white;
+}
+footer .footer__letter .letterForm input {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: #a9027e;
+  width: 100%;
+}
+footer .footer__letter .letterForm input::placeholder {
+  color: white;
 }/*# sourceMappingURL=main.css.map */

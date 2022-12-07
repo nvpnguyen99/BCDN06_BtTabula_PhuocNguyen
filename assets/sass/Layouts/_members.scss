@@ -1,5 +1,5 @@
 .members{
-    padding: 30px 0;
+    padding: 25px 0;
     background-image: url(../img/Tabula_img13.png);
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -10,7 +10,8 @@
             margin-top: 26px; 
             border-radius: 10px;
             overflow: hidden;  
-            transition: all .75s;
+            border: none;
+            transition: all .5s;
             &:hover{
                 box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);;
             }
