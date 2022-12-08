@@ -32,6 +32,11 @@
                 padding: 10px 0 10px 40px;
                 border-radius: 50px;
                 position: relative;
+                transition: all .2s;
+
+                &:focus-within{
+                    border: 1px solid #c1c1c1;
+                }
 
                 .formIcon{
                     @include styleText(14px,500, $color-dark-pink);
@@ -68,6 +73,17 @@
                     color: $color-dark-pink;
                     box-shadow: 0 0 0 1px #b61984 inset;
                 }
+            }
+        }
+    }
+}
+
+@include responsive("large"){
+    .findCourse{
+        padding-right: 80px;
+        .findCourse__right{
+            .courseForm{
+                width: 100%;
             }
         }
     }

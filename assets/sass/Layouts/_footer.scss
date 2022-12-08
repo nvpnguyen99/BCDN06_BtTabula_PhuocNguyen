@@ -51,7 +51,7 @@ footer{
                 box-shadow: 0 0 0 3em white inset;
     
                 &:hover{
-                    color: $color-dark-pink;
+                    color: white;
                     box-shadow: 0 0 0 1px white inset;
                 }
         }
@@ -60,6 +60,7 @@ footer{
                 border: 1px solid #b3298b;
                 padding: 10px;
                 border-radius: 50px;
+                transition: all .3s;
                 &:focus-within{
                     border: 1px solid white;  
                 }

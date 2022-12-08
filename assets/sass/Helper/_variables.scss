@@ -1,1 +1,9 @@
 $color-dark-pink: #b61984;
+
+//break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px
+);
